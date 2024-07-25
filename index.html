@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./meadia.css">
     <title>Document</title>
 </head>
 <body>
@@ -47,6 +48,16 @@
                             <button class="header__service-link">
                                 <img src="./images/store.svg" alt="" class="header__service-img">
                             </button>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                <ul class="dropdown-menu" style="inset: auto auto auto 0;">
+                                    <li><button href="" class="header__menu-link dropdown-item">Каталог</button></li>
+                                    <li><button href="" class="header__menu-link dropdown-item">Сертификаты</button></li>
+                                    <li><button href="" class="header__menu-link dropdown-item">Вопрос</button></li>
+                                    <li><button href="" class="header__menu-link dropdown-item">Контакты</button></li>
+                                </ul>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -57,8 +68,8 @@
     <section class="offer">
         <div class="container">
             <div class="offer__inner">
-                <h1 class="offer__title">Оптовые поставки <br> корейской косметики <br> в любую точку России</h1>
-                <p class="offer__text">Гарантируем бесперебойные поставки при любой <br> международной обстановке</p>
+                <h1 class="offer__title">Оптовые поставки корейской косметики в любую точку России</h1>
+                <p class="offer__text">Гарантируем бесперебойные поставки при любой международной обстановке</p>
                 <div class="offer__btns">
                     <button class="offer__btn-application">Оставить заявку</button>
                     <button class="offer__btn-сatalog">Получить каталог</button>
@@ -99,7 +110,7 @@
     <section class="advantage">
         <div class="container px-4">
             <h1 class="advantage-title">Наши преимущества</h1>
-            <div class="row advantage__items">
+            <div class="row row-cols-1  row-cols-md-2 row-cols-xxl-4 advantage__items">
                 <div class=" col advantage__item">
                     <img src="./images/Background1.svg" alt="" class="advantage__item-bck">
                     <h2 class="advantage__item-title">Наименований товара</h2>
@@ -155,7 +166,7 @@
     <section class="hits">
         <div class="container">
             <div class="hits__inner">
-                <h1 class="hist__title"></h1>
+                <h1 class="hist__title">Хиты продаж</h1>
                 <div class="swiper mySwiper-2">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide hits__item">
@@ -314,15 +325,13 @@
                                 </button>
                             </div>
                         </div>
-                    </div>
-                    
+                    </div>     
                     
                 </div>
-                
+                <div class="swiper-pagination"></div>   
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
-            
         </div>
         <button class="hits__btn section__btn">Смотреть всё</button>
         
@@ -497,11 +506,11 @@
     <section class="help">
         <div class="container px-4">
             <div class="help__inner">
-                <div class="row">
+                <div class="row row-cols-1 row-cols-lg-2">
                     <div class="col-auto help__left">
-                        <img src="./images/BackHelp.png" alt="" srcset="">
+                        <img class="help__left-img" src="./images/BackHelp.png" alt="" srcset="">
                     </div>
-                    <div class="col">
+                    <div class="col help__right">
                         <h1 class="help__title">Помощь с выбором</h1>
                         <p class="help__text">Ответьте на несколько вопросов и мы подберем для вас косметику в 3-х ценовых диапазонах от бюджетного до премиального</p>
                         <div class="help__progress"></div>
@@ -521,16 +530,16 @@
                                 </div>
                             </div>
                             <div class="row contacts__form-bts">
-                                <div class="col-auto">
-                                    <button class="hits__item-btn contacts__form-btn--prev">
-                                        <img src="./images/Arrow-l.png" alt="" class="contacts__form-btn--img">
-                                        <p class="contacts__form-btn--text-prev">Назад</p>
+                                <div class="col-auto help__form-btn-box">
+                                    <button class="hits__item-btn help__form-btn  contacts__form-btn--prev">
+                                        <img src="./images/Arrow-l.png" alt="" class="contacts__form-btn--img img--left">
+                                        <p class="contacts__form-btn--text-prev ">Назад</p>
                                     </button>
                                 </div>
-                                <div class="col-auto">
-                                    <button class="hits__item-btn contacts__form-btn--next">
+                                <div class="col-auto help__form-btn-box">
+                                    <button class="hits__item-btn help__form-btn contacts__form-btn--next">
                                         <p class="contacts__form-btn--text-next">Далее</p>
-                                        <img src="./images/Arrow-r.svg" alt="" class="contacts__form-btn--img">
+                                        <img src="./images/Arrow-r.svg" alt="" class="contacts__form-btn--img img--right">
                                     </button>
                                 </div>
                             </div>
@@ -550,7 +559,7 @@
                         <p class="footer__text">@2024 Aleucos</p>
                     </div>
                     <div class="col">
-                        <div class="row row justify-content-md-center">
+                        <div class="row footer__menu justify-content-md-center">
                             <div class="col-auto">
                                 <p class="footer__text">Каталог</p>
                             </div>
@@ -595,17 +604,74 @@
             spaceBetween: 52,
             freeMode: true,
         });
-        var swiper = new Swiper(".mySwiper-2", {
-            slidesPerView:4,
-            spaceBetween: 24,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },  
-            mousewheel: true,
-            keyboard: true,
-        });
+        window.addEventListener('resize', () => {
+            const viewport_width = Math.max(document.documentElement.clientWidth,window.innerWidth || 0)
+            console.log(viewport_width);
+            let swiper
+            if (viewport_width > 1400) {
+                swiper = new Swiper(".mySwiper-2", {
+                    slidesPerView:4,
+                    spaceBetween: 24,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },  
+                    mousewheel: true,
+                    keyboard: true,
+                });
+            } else if (viewport_width <= 1400 && viewport_width >= 768) {
+                swiper = new Swiper(".mySwiper-2", {
+                    slidesPerView: 2,
+                    spaceBetween: 24,
+                    freeMode: true,
+                });
+            } else if (viewport_width < 768) {
+                console.log('d');
+                swiper = new Swiper(".mySwiper-2", {
+                    slidesPerView: 1,
+                    spaceBetween: 24,
+                    freeMode: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                    }
+                });
+            }
+        })
+        window.addEventListener('DOMContentLoaded', () => {
+            const viewport_width = Math.max(document.documentElement.clientWidth,window.innerWidth || 0)
+            console.log(viewport_width);
+            let swiper
+            if (viewport_width > 1400) {
+                swiper = new Swiper(".mySwiper-2", {
+                    slidesPerView:4,
+                    spaceBetween: 24,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },  
+                    mousewheel: true,
+                    keyboard: true,
+                });
+            } else if (viewport_width <= 1400 && viewport_width >= 768) {
+                swiper = new Swiper(".mySwiper-2", {
+                    slidesPerView: 2,
+                    spaceBetween: 24,
+                    freeMode: true,
+                });
+            } else if (viewport_width < 768) {
+                console.log('d');
+                swiper = new Swiper(".mySwiper-2", {
+                    slidesPerView: 1,
+                    spaceBetween: 24,
+                    freeMode: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                    }
+                });
+            }
+        })
     </script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
