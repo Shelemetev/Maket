@@ -141,6 +141,7 @@ h1,h2,p {
     font-weight: 700;
     line-height: 56px;
     color: #0D1C12;
+    max-width: 630px;
 }
 
 .offer__text {
@@ -149,6 +150,8 @@ h1,h2,p {
     line-height: 22.68px;
     color: #0D1C12;
     margin-top: 24px;
+    max-width: 446px;
+
 }
 
 .offer__btns {
@@ -841,6 +844,14 @@ h1,h2,p {
     border: none;
 }
 
+ .header {
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    background-color: #FFFFFF;
+    top: 0;
+}
+
 /* .dropdown-menu::before {
     content: '';
     position: absolute;
@@ -849,3 +860,7 @@ h1,h2,p {
     top: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 } */
+
+.body {
+    padding-top: 110px;
+}

@@ -157,6 +157,38 @@
     .answer__items-box {
         margin-top: 40px;
     }
+
+    .company {
+        padding: 60px 0;
+    }
+
+    .advantage {
+        padding: 0 0 25px;
+    }
+
+    .catalog {
+        padding: 25px 0;
+    }
+
+    .hits {
+        padding: 25px 0;
+    }
+
+    .contacts {
+        padding: 25px 0;
+    }
+
+    .answer {
+        padding: 25px 0;
+    }
+
+    .help {
+        padding: 25px 0;
+    }
+
+    .footer {
+        padding: 25px 0;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -167,10 +199,12 @@
 
     .offer__title {
         text-align: center;
+        max-width: 100%;
     }
 
     .offer__text {
         text-align: center;
+        max-width: 100%;
     }
 
     .offer__btn-application {
