@@ -1,4 +1,6 @@
 @media (max-width: 1400px) {
+
+
     .header__service-input--box {
         display: none;
     }
@@ -189,9 +191,46 @@
     .footer {
         padding: 25px 0;
     }
+
+    .advantage__item-img--1 {
+        right: 50%;
+        transform: translateX(50%) translateX(145px);
+
+    }
+    .advantage__item-img--2 {
+        right: 50%;
+        transform: translateX(50%) translateX(145px);
+
+    }
+
+    
+    
 }
 
 @media (max-width: 1200px) {
+    .help__right {
+        padding-bottom: 78px;
+        /* transform: translateX(-50%); */
+    }
+
+    .help__form-btns {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80% !important;
+    }
+
+    /* .help__form-btn {
+        width: 50%;
+    } */
+
+    .col-btn {
+        width: auto ;
+        width: 50%;
+    }
+
+    .answer__items-surfiticat {
+        height: auto;
+    }
 
     .offer__inner {
         background-image: linear-gradient(to top,rgba(237,245,239,0) 0%, rgba(237,245,239,1) 100%), url(./images/Frame\ 41.svg);
@@ -339,6 +378,11 @@
 }
 
 @media (max-width: 576px) {
+    .help__inner::before {
+        display: none;
+    }
+
+
     .header__menu {
         display: none;
     }
@@ -382,7 +426,7 @@
         padding-top: 20px;
     }
 
-    .contacts__form-input {
+    .contacts__form-input, .help__form-input {
         padding: 6px 8px;
     }
 
@@ -403,7 +447,7 @@
         margin-top: 24px;
     }
 
-    .section__btn {
+    .section__btn,.help__form-btn {
         padding: 10px 16px;
         font-size: 16px;
     }
@@ -437,5 +481,31 @@
 
     .help {
         padding-bottom: 0;
+    }
+
+    .header {
+        position: fixed;
+        z-index: 10;
+        width: 100vw;
+        background-color: #FFFFFF;
+        top: -100%;
+        transition: 0.5s;
+    }
+    
+    /* .dropdown-menu::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    } */
+    
+    .body {
+        padding-top: 110px;
+    }
+
+    .header--visible {
+        top: 0;
     }
 }

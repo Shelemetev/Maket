@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/Logo.ico" type="image/x-icon">
     <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -18,10 +19,10 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./meadia.css">
-    <title>Document</title>
+    <title>Aleucos оптовые поставки корейской косметики</title>
 </head>
 <body class="body">
-    <header class="header">
+    <header class="header header--visible">
         <div class="container ">
             <div class="row header__inner align-items-center">
                 <div class="col header__logo">
@@ -47,9 +48,9 @@
                             <button class="header__service-link">
                                 <img src="./images/store.svg" alt="" class="header__service-img">
                             </button>
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
-                                <ul class="dropdown-menu" style="inset: auto auto auto 0;">
+                            <div class="dropdown dropdown__header">
+                                <button class="btn btn-secondary dropdown-toggle header__menu-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                <ul class="dropdown-menu dropdown__header-menu" style="inset: auto auto auto 0;">
                                     <li><button href="" class="header__menu-link dropdown-item">Каталог</button></li>
                                     <li><button href="" class="header__menu-link dropdown-item">Сертификаты</button></li>
                                     <li><button href="" class="header__menu-link dropdown-item">Вопрос</button></li>
@@ -87,21 +88,10 @@
                 <img class="swiper-slide" src="./images/slider img5.svg" alt="" srcset="">
                 <img class="swiper-slide" src="./images/slider img6.svg" alt="" srcset="">
                 <img class="swiper-slide" src="./images/slider img7.svg" alt="" srcset="">
-                <img class="swiper-slide" src="./images/slider img.svg" alt="" srcset="">
-                <img class="swiper-slide" src="./images/slider img2.svg" alt="" srcset="">
                 <img class="swiper-slide" src="./images/slider img3.svg" alt="" srcset="">
-                <img class="swiper-slide" src="./images/slider img4.svg" alt="" srcset="">
-                <img class="swiper-slide" src="./images/slider img5.svg" alt="" srcset="">
                 <img class="swiper-slide" src="./images/slider img6.svg" alt="" srcset="">
-                <img class="swiper-slide" src="./images/slider img7.svg" alt="" srcset="">
-                <img class="swiper-slide" src="./images/slider img.svg" alt="" srcset="">
-                <img class="swiper-slide" src="./images/slider img2.svg" alt="" srcset="">
-                <img class="swiper-slide" src="./images/slider img3.svg" alt="" srcset="">
-                <img class="swiper-slide" src="./images/slider img4.svg" alt="" srcset="">
-                <img class="swiper-slide" src="./images/slider img5.svg" alt="" srcset="">
+                <img class="swiper-slide" src="./images/slider img5.svg" alt="" srcset="">  
                 <img class="swiper-slide" src="./images/slider img6.svg" alt="" srcset="">
-                <img class="swiper-slide" src="./images/slider img7.svg" alt="" srcset="">
-                   
             </div>
           </div>
     </section>
@@ -114,21 +104,27 @@
                     <img src="./images/Background1.svg" alt="" class="advantage__item-bck">
                     <h2 class="advantage__item-title">Наименований товара</h2>
                     <p class="advantage__item-text">6 000+</p>
+                    <img src="./images/green.svg" class="advantage__item-img--1" alt="" srcset="">
                 </div>
                 <div class="col advantage__item">
                     <img src="./images/Background2.svg" alt="" class="advantage__item-bck">
                     <h2 class="advantage__item-title">Азиатских брендов</h2>
                     <p class="advantage__item-text">3 000+</p>
+                    <img src="./images/Star 1.svg" class="advantage__item-img--2" alt="" srcset="">
+
                 </div>
                 <div class="col advantage__item">
                     <img src="./images/Background1.svg" alt="" class="advantage__item-bck">
                     <h2 class="advantage__item-title">10 лет на рынке</h2>
                     <p class="advantage__item-text">10</p>
+                    <img src="./images/green.svg" class="advantage__item-img--1" alt="" srcset="">
+
                 </div>
                 <div class="col advantage__item">
                     <img src="./images/Background2.svg" alt="" class="advantage__item-bck">
                     <h2 class="advantage__item-title">Складов по РФ</h2>
                     <p class="advantage__item-text">200+</p>
+                    <img src="./images/Star 1.svg" class="advantage__item-img--2" alt="" srcset="">
                 </div>
             </div>
         </div>
@@ -355,35 +351,35 @@
                         <p class="contacts__info-box--text">На всю продукцию имеются сертификаты и декларации соответствия</p>
                     </div>
                     <div class="contacts__info-links">
-                        <a href="" class="contacts__info-link">
-                            <img src="./images/Whatsapp.svg" alt="" class="contacts__info-link--img">
+                        <a href="/" alt="" class="contacts__info-link--img">
+                            <img src="./images/1.svg" alt="" class="contacts__info-link--img">
                         </a>
-                        <a href="" class="contacts__info-link">
-                            <img src="/images/Instagram.svg" alt="" class="contacts__info-link--img">
+                        <a href="/" class="contacts__info-link">
+                            <img src="./images/2.svg" alt="" class="contacts__info-link--img">
                         </a>
                     </div>
                     <p class="contacts__info-suptext-loc">г.Владивосток, ул. Днепровская, д.25д, стр.4а</p>
-                    <p class="contacts__info-suptext">+7 (964) 454-17-00</p>
+                    <a class="contacts__info-suptext" href="tel:+79644541700">+7 (964) 454-17-00</a>
                 </div>
                 <div class="contacts__form">
                     <form action="">
                         <div class="contacts__form-box">
                             <h2 class="contacts__form-title">Имя</h2>
-                            <input type="text" class="contacts__form-input">
+                            <input placeholder="Введите имя" type="text" class="contacts__form-input">
                         </div>
                         <div class="contacts__form-items">
                             <div class="contacts__form-box">
                                 <h2 class="contacts__form-title">Телефон</h2>
-                                <input type="text" class="contacts__form-input">
+                                <input placeholder="+7" type="text" class="contacts__form-input">
                             </div>
                             <div class="contacts__form-box">
                                 <h2 class="contacts__form-title">Email</h2>
-                                <input type="text" class="contacts__form-input">
+                                <input placeholder="Введите email" class="contacts__form-input"></input>
                             </div>
                         </div>
                         <div class="contacts__form-box box__marin-top">
                             <h2 class="contacts__form-title">Сообщение</h2>
-                            <input type="text" class="contacts__form-input">
+                            <textarea placeholder="Введите текст сообщения" class="contacts__form-input contacts__form-textarea"></textarea>
                         </div>
                         <div class="contacts__form-suptext">Нажимая на кнопку “Отправить заявку”, Вы даете согласие на <a class="contacts__form-suptext--link" href="">обработку персональных данных</a> и соглашаетесь с <a class="contacts__form-suptext--link" href="">политикой конфиденциальности.</a></div>
                         <button class="contacts__form-btn section__btn">Оставить заявку</button>
@@ -399,39 +395,109 @@
                 <h1 class="answer__title">Ответы на вопросы и документы</h1>
                 <div class="row answer__items-box">
                     <div class="col-auto answer__items-answer">
-                        <div class="answer__item-answer">
-                            <p class="answer__item-text">Какая минимальная сумма заказа?</p>
-                            <img class="answer__item-img" src="./images/plus.svg" alt="" srcset="">
+                        <div class="accordion answer__item-answer" id="accordionExample1">
+                            <div class="accordion-item  answer__accordion-item">
+                              <h2 class="accordion-header answer__accordion-header">
+                                <button class="accordion-button answer__accordion-item--btn collapsed" type="button"  data-bs-toggle="collapse"  data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Какая минимальная сумма заказа?
+                                </button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                                <div class="accordion-body">
+                                    15 000 рублей
+                                </div>
+                              </div>
+                            </div>
                         </div>
-                        <div class="answer__item-answer">
-                            <p class="answer__item-text">Где вы находитесь?</p>
-                            <img class="answer__item-img" src="./images/plus.svg" alt="" srcset="">
+                        <div class="accordion answer__item-answer" id="accordionExample1">
+                            <div class="accordion-item  answer__accordion-item">
+                              <h2 class="accordion-header answer__accordion-header">
+                                <button class="accordion-button answer__accordion-item--btn collapsed" type="button"  data-bs-toggle="collapse"  data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapseOne">
+                                    Где вы находитесь?
+                                </button>
+                              </h2>
+                              <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                                <div class="accordion-body">
+                                    15 000 рублей
+                                </div>
+                              </div>
+                            </div>
                         </div>
-                        <div class="answer__item-answer">
-                            <p class="answer__item-text">На какие бренды предоставляете документы для маркетплейсов?</p>
-                            <img class="answer__item-img" src="./images/plus.svg" alt="" srcset="">
+                        <div class="accordion answer__item-answer" id="accordionExample1">
+                            <div class="accordion-item  answer__accordion-item">
+                              <h2 class="accordion-header answer__accordion-header">
+                                <button class="accordion-button answer__accordion-item--btn collapsed" type="button"  data-bs-toggle="collapse"  data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapseOne">
+                                    На какие бренды предоставляете документы для маркетплейсов?
+                                </button>
+                              </h2>
+                              <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                                <div class="accordion-body">
+                                    15 000 рублей
+                                </div>
+                              </div>
+                            </div>
                         </div>
-                        <div class="answer__item-answer">
-                            <p class="answer__item-text">Имеются ли документы, подтверждающие оригинальность товара?</p>
-                            <img class="answer__item-img" src="./images/plus.svg" alt="" srcset="">
+                        <div class="accordion answer__item-answer" id="accordionExample1">
+                            <div class="accordion-item  answer__accordion-item">
+                              <h2 class="accordion-header answer__accordion-header">
+                                <button class="accordion-button answer__accordion-item--btn collapsed" type="button"  data-bs-toggle="collapse"  data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapseOne">
+                                    Имеются ли документы, подтверждающие оригинальность товара?
+                                </button>
+                              </h2>
+                              <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                                <div class="accordion-body">
+                                    15 000 рублей
+                                </div>
+                              </div>
+                            </div>
                         </div>
-                        <div class="answer__item-answer">
-                            <p class="answer__item-text">С какими транспортными компаниями работаете?</p>
-                            <img class="answer__item-img" src="./images/plus.svg" alt="" srcset="">
+                        <div class="accordion answer__item-answer" id="accordionExample1">
+                            <div class="accordion-item  answer__accordion-item">
+                              <h2 class="accordion-header answer__accordion-header">
+                                <button class="accordion-button answer__accordion-item--btn collapsed" type="button"  data-bs-toggle="collapse"  data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapseOne">
+                                    С какими транспортными компаниями работаете?
+                                </button>
+                              </h2>
+                              <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                                <div class="accordion-body">
+                                    15 000 рублей
+                                </div>
+                              </div>
+                            </div>
                         </div>
-                        <div class="answer__item-answer">
-                            <p class="answer__item-text">Имеется ли система скидок за объемы?</p>
-                            <img class="answer__item-img" src="./images/plus.svg" alt="" srcset="">
+                        <div class="accordion answer__item-answer" id="accordionExample1">
+                            <div class="accordion-item  answer__accordion-item">
+                              <h2 class="accordion-header answer__accordion-header">
+                                <button class="accordion-button answer__accordion-item--btn collapsed" type="button"  data-bs-toggle="collapse"  data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapseOne">
+                                    Имеется ли система скидок за объемы?
+                                </button>
+                              </h2>
+                              <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                                <div class="accordion-body">
+                                    15 000 рублей
+                                </div>
+                              </div>
+                            </div>
                         </div>
-                        <div class="answer__item-answer">
-                            <p class="answer__item-text">Доставка по РФ платная или бесплатная?</p>
-                            <img class="answer__item-img" src="./images/plus.svg" alt="" srcset="">
+                        <div class="accordion answer__item-answer" id="accordionExample1">
+                            <div class="accordion-item  answer__accordion-item">
+                              <h2 class="accordion-header answer__accordion-header">
+                                <button class="accordion-button answer__accordion-item--btn collapsed" type="button"  data-bs-toggle="collapse"  data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapseOne">
+                                    Доставка по РФ платная или бесплатная?
+                                </button>
+                              </h2>
+                              <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                                <div class="accordion-body">
+                                    15 000 рублей
+                                </div>
+                              </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col answer__items-surfiticat">
                         <h2 class="answer__item-text">Сертификаты и декларации соответствия:</h2>
                         <div class="row answer__item-surfiticat">
-                            <div class="col-auto">
+                            <div class="col-auto ">
                                 <img src="./images/Vector2.svg" alt="">
                             </div>
                             <div class="col">
@@ -512,37 +578,189 @@
                     <div class="col help__right">
                         <h1 class="help__title">Помощь с выбором</h1>
                         <p class="help__text">Ответьте на несколько вопросов и мы подберем для вас косметику в 3-х ценовых диапазонах от бюджетного до премиального</p>
-                        <div class="help__progress"></div>
-                        <div class="help__form">
-                            <div class="contacts__form-box">
-                                <h2 class="contacts__form-title">Имя</h2>
-                                <input type="text" class="contacts__form-input">
+                        <div class="help__progress progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="help__progress-bar progress-bar bg-success" style="width: 0%"></div>
+                        </div>
+                        <form class="help__form">
+                            <div class="help__form-box help__form-box--1">
+                                <h1 class="help__form-title">Где Вы реализуете продукцию?</h1>
+                                <div class="row help__form-item">
+                                    <div class="col-auto">
+                                        <input type="radio" id="realization-1" value="1" name="realization" class="help__form-radio item--hidden">
+                                        <label for="realization-1" class="help__form-checkbox--custom"></label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <p class="help__form-text">Онлайн магазин</p>
+                                    </div>
+                                </div>
+                                <div class="row help__form-item">
+                                    <div class="col-auto">
+                                        <input type="radio" id="realization-2" value="2" name="realization" class="help__form-radio item--hidden">
+                                        <label for="realization-2" class="help__form-checkbox--custom"></label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <p class="help__form-text">Офлайн магазин</p> 
+                                    </div>
+                                </div>
+                                <div class="row help__form-item">
+                                    <div class="col-auto">
+                                        <input type="radio" id="realization-3" value="3" name="realization" class="help__form-radio item--hidden">
+                                        <label for="realization-3" class="help__form-checkbox--custom"></label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <p class="help__form-text">Маркетплейсы</p>
+                                    </div>
+                                </div>
+                                <div class="row help__form-item">
+                                    <div class="col-auto">
+                                        <input type="radio" id="realization-4" value="4" name="realization" class="help__form-radio item--hidden">
+                                        <label for="realization-4" class="help__form-checkbox--custom"></label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <p class="help__form-text">Совместные закупки</p>
+                                    </div>
+                                </div>
+                                
                             </div>
-                            <div class="contacts__form-items">
-                                <div class="contacts__form-box">
-                                    <h2 class="contacts__form-title">Телефон</h2>
-                                    <input type="text" class="contacts__form-input">
+                            <div class="help__form-box help__form-box--2 item--hidden">
+                                <h1 class="help__form-title">Предполагаемый сегмент рынка?</h1>
+                                <div class="row help__form-item">
+                                    <div class="col-auto">
+                                        <input type="checkbox" id="segment-1" value="1" name="segment" class="help__form-radio item--hidden">
+                                        <label for="segment-1" class="help__form-checkbox--custom"></label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <p class="help__form-text">Низкий ценовой сегмент</p>
+                                    </div>
                                 </div>
-                                <div class="contacts__form-box">
-                                    <h2 class="contacts__form-title">Email</h2>
-                                    <input type="text" class="contacts__form-input">
+                                <div class="row help__form-item">
+                                    <div class="col-auto">
+                                        <input type="checkbox" id="segment-2" value="2" name="segment" class="help__form-radio item--hidden">
+                                        <label for="segment-2" class="help__form-checkbox--custom"></label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <p class="help__form-text">Средний сегмент</p> 
+                                    </div>
+                                </div>
+                                <div class="row help__form-item">
+                                    <div class="col-auto">
+                                        <input type="checkbox" id="segment-3" value="3" name="segment" class="help__form-radio item--hidden">
+                                        <label for="segment-3" class="help__form-checkbox--custom"></label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <p class="help__form-text">Премиальный сегмент</p>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                            <div class="help__form-box help__form-box--3 item--hidden">
+                                <h1 class="help__form-title">Что в первую очередь Вас интересует в сотрудничестве?</h1>
+                                <div class="row help__form-item">
+                                    <div class="col-auto">
+                                        <input type="checkbox" id="intresting-1" value="1" name="intresting" class="help__form-radio item--hidden">
+                                        <label for="intresting-1" class="help__form-checkbox--custom"></label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <p class="help__form-text">Новые бренды</p>
+                                    </div>
+                                </div>
+                                <div class="row help__form-item">
+                                    <div class="col-auto">
+                                        <input type="checkbox" id="intresting-2" value="2" name="intresting" class="help__form-radio item--hidden">
+                                        <label for="intresting-2" class="help__form-checkbox--custom"></label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <p class="help__form-text">Низкие цены</p> 
+                                    </div>
+                                </div>
+                                <div class="row help__form-item">
+                                    <div class="col-auto">
+                                        <input type="checkbox" id="intresting-3" value="3" name="intresting" class="help__form-radio item--hidden">
+                                        <label for="intresting-3" class="help__form-checkbox--custom"></label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <p class="help__form-text">Качественный сервис</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="row help__form-item">
+                                    <div class="col-auto">
+                                        <input type="checkbox" id="intresting-4" value="4" name="intresting" class="help__form-radio item--hidden">
+                                        <label for="intresting-4" class="help__form-checkbox--custom"></label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <p class="help__form-text">Наличие полного пакета документов</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row contacts__form-bts">
-                                <div class="col-auto help__form-btn-box">
-                                    <button class="hits__item-btn help__form-btn  contacts__form-btn--prev">
-                                        <img src="./images/Arrow-l.png" alt="" class="contacts__form-btn--img img--left">
-                                        <p class="contacts__form-btn--text-prev ">Назад</p>
-                                    </button>
+                            <div class="help__form-box help__form-box--4 item--hidden">
+                                <h1 class="help__form-title">Когда Вы готовы начать сотрудничество?</h1>
+                                <div class="row help__form-item">
+                                    <div class="col-auto">
+                                        <input type="radio" id="time-1" value="1" name="time" class="help__form-radio item--hidden">
+                                        <label for="time-1" class="help__form-checkbox--custom"></label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <p class="help__form-text">Сразу после получения прайса</p>
+                                    </div>
                                 </div>
-                                <div class="col-auto help__form-btn-box">
-                                    <button class="hits__item-btn help__form-btn contacts__form-btn--next">
-                                        <p class="contacts__form-btn--text-next">Далее</p>
-                                        <img src="./images/Arrow-r.svg" alt="" class="contacts__form-btn--img img--right">
-                                    </button>
+                                <div class="row help__form-item">
+                                    <div class="col-auto">
+                                        <input type="radio" id="time-2" value="2" name="time" class="help__form-radio item--hidden">
+                                        <label for="time-2" class="help__form-checkbox--custom"></label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <p class="help__form-text">В ближайшее время</p> 
+                                    </div>
+                                </div>
+                                <div class="row help__form-item">
+                                    <div class="col-auto">
+                                        <input type="radio" id="time-3" value="3" name="time" class="help__form-radio item--hidden">
+                                        <label for="time-3" class="help__form-checkbox--custom"></label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <p class="help__form-text">После сравнения цен с другими поставщиками</p>
+                                    </div>
+                                </div>
+                                <div class="row help__form-item">
+                                    <div class="col-auto">
+                                        <input type="radio" id="time-4" value="4" name="time" class="help__form-radio item--hidden">
+                                        <label for="time-4" class="help__form-checkbox--custom"></label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <p class="help__form-text">Не скоро</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="help__form-box help__form-box--5 item--hidden">
+                                <div class="row">
+                                    <div class="col help__form-box-item-1">
+                                        <h1 class="help__form-title">Имя</h1>
+                                        <input placeholder="Введите имя" class="help__form-input" type="text">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col help__form-box-item">
+                                        <h1 class="help__form-title">Телефон</h1>
+                                        <input placeholder="+7" class="help__form-input" type="text">
+                                    </div>
+                                    <div class="col help__form-box-item">
+                                        <h1 class="help__form-title">Email</h1>
+                                        <input placeholder="Введите email" class="help__form-input" type="text">
+                                    </div>
                                 </div>
                             </div>
-                            
+                        </form>
+                        <div class="row row-cols-2 help__form-btns">
+                            <div class="col-auto col-btn">
+                                <button type="button" class="help__form-btn help__form-btn--prev">Назад</button>
+                            </div>
+                            <div class="col-auto col-btn">
+                                <button type="button" class="help__form-btn help__form-btn--next">Далее</button>
+                                <button type="submit" class="help__form-btn help__form-btn--submit item--hidden">Отправить</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -600,8 +818,14 @@
     <script>
         var swiper = new Swiper(".mySwiper-1", {
             slidesPerView: 'auto',
+            loop: true,
             spaceBetween: 52,
-            freeMode: true,
+            speed: 3500,
+            freeMode: false,
+            autoplay: {
+                delay: 500,
+                disableOnInteraction: false,
+            }
         });
         window.addEventListener('resize', () => {
             const viewport_width = Math.max(document.documentElement.clientWidth,window.innerWidth || 0)
@@ -629,9 +853,10 @@
                 swiper = new Swiper(".mySwiper-2", {
                     slidesPerView: 1,
                     spaceBetween: 24,
-                    freeMode: true,
+                    freeMode: false,
                     pagination: {
                         el: ".swiper-pagination",
+                        dynamicBullets: true,
                     }
                 });
             }
@@ -662,7 +887,7 @@
                 swiper = new Swiper(".mySwiper-2", {
                     slidesPerView: 1,
                     spaceBetween: 24,
-                    freeMode: true,
+                    freeMode: false,
                     pagination: {
                         el: ".swiper-pagination",
                     }
