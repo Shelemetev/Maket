@@ -71,8 +71,56 @@
                 <h1 class="offer__title">Оптовые поставки корейской косметики в любую точку России</h1>
                 <p class="offer__text">Гарантируем бесперебойные поставки при любой международной обстановке</p>
                 <div class="offer__btns">
-                    <button class="offer__btn-application">Оставить заявку</button>
-                    <button class="offer__btn-сatalog">Получить каталог</button>
+                    <button type="button" class="offer__btn-application" data-bs-toggle="modal" data-bs-target="#exampleModal">Оставить заявку</button>
+                    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content modal__offer-content">
+                                <button type="button" class="btn-close offer__modal-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="offer__form">
+                                    <form action="">
+                                        <div class="contacts__form-box">
+                                            <h2 class="contacts__form-title">Имя</h2>
+                                            <input placeholder="Введите имя" type="text" maxlength="30" name="name" class="contacts__form-input" required>
+                                        </div>
+                                        <div class="contacts__form-items">
+                                            <div class="contacts__form-box">
+                                                <h2 class="contacts__form-title">Телефон</h2>
+                                                <input placeholder="+7" type="text" name="tel" class="contacts__form-input offer__input-tel" required>
+                                            </div>
+                                            <div class="contacts__form-box">
+                                                <h2 class="contacts__form-title">Email</h2>
+                                                <input type="email" placeholder="Введите email" maxlength="30" name="email" class="contacts__form-input" required></input>
+                                            </div>
+                                        </div>
+                                        <div class="contacts__form-box box__marin-top">
+                                            <h2 class="contacts__form-title">Сообщение</h2>
+                                            <textarea placeholder="Введите текст сообщения" maxlength="150" class="contacts__form-input contacts__form-textarea"></textarea>
+                                        </div>
+                                        <div class="contacts__form-suptext">Нажимая на кнопку “Отправить заявку”, Вы даете согласие на <a class="contacts__form-suptext--link" href="">обработку персональных данных</a> и соглашаетесь с <a class="contacts__form-suptext--link" href="">политикой конфиденциальности.</a></div>
+                                        <button class="contacts__form-btn section__btn">Оставить заявку</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    <button class="offer__btn-сatalog" data-bs-toggle="modal" data-bs-target="#exampleModal2">Получить каталог</button>
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              ...
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>
@@ -81,17 +129,31 @@
     <section class="company">
         <div class="swiper mySwiper-1">
             <div class="swiper-wrapper">
-                <img class="swiper-slide" src="./images/slider img.svg" alt="" srcset="">
-                <img class="swiper-slide" src="./images/slider img2.svg" alt="" srcset="">
-                <img class="swiper-slide" src="./images/slider img3.svg" alt="" srcset="">
-                <img class="swiper-slide" src="./images/slider img4.svg" alt="" srcset="">
-                <img class="swiper-slide" src="./images/slider img5.svg" alt="" srcset="">
-                <img class="swiper-slide" src="./images/slider img6.svg" alt="" srcset="">
-                <img class="swiper-slide" src="./images/slider img7.svg" alt="" srcset="">
-                <img class="swiper-slide" src="./images/slider img3.svg" alt="" srcset="">
-                <img class="swiper-slide" src="./images/slider img6.svg" alt="" srcset="">
-                <img class="swiper-slide" src="./images/slider img5.svg" alt="" srcset="">  
-                <img class="swiper-slide" src="./images/slider img6.svg" alt="" srcset="">
+                <img class="swiper-slide swiper-slide--img" src="./images/slider img.png" alt="" srcset="">
+                <img class="swiper-slide swiper-slide--img" src="./images/slider img2.svg" alt="" srcset="">
+                <img class="swiper-slide swiper-slide--img" src="./images/slider img3.svg" alt="" srcset="">
+                <img class="swiper-slide swiper-slide--img" src="./images/slider img4.svg" alt="" srcset="">
+                <img class="swiper-slide swiper-slide--img" src="./images/slider img5.svg" alt="" srcset="">
+                <img class="swiper-slide swiper-slide--img" src="./images/slider img6.svg" alt="" srcset="">
+                <!-- <img class="swiper-slide swiper-slide--img" src="./images/slider img7.svg" alt="" srcset=""> -->
+                <img class="swiper-slide swiper-slide--img" src="./images/slider img3.svg" alt="" srcset="">
+                <img class="swiper-slide swiper-slide--img" src="./images/slider img6.svg" alt="" srcset="">
+                <img class="swiper-slide swiper-slide--img" src="./images/slider img5.svg" alt="" srcset="">  
+                <img class="swiper-slide swiper-slide--img" src="./images/slider img6.svg" alt="" srcset="">
+                <img class="swiper-slide swiper-slide--img" src="./images/slider img.svg" alt="" srcset="">
+                <img class="swiper-slide swiper-slide--img" src="./images/slider img2.svg" alt="" srcset="">
+                <img class="swiper-slide swiper-slide--img" src="./images/slider img3.svg" alt="" srcset="">
+                <img class="swiper-slide swiper-slide--img" src="./images/slider img4.svg" alt="" srcset="">
+                <img class="swiper-slide swiper-slide--img" src="./images/slider img2.svg" alt="" srcset="">
+                <img class="swiper-slide swiper-slide--img" src="./images/slider img3.svg" alt="" srcset="">
+                <img class="swiper-slide swiper-slide--img" src="./images/slider img4.svg" alt="" srcset="">
+                <img class="swiper-slide swiper-slide--img" src="./images/slider img5.svg" alt="" srcset="">
+                <img class="swiper-slide swiper-slide--img" src="./images/slider img6.svg" alt="" srcset="">
+                <!-- <img class="swiper-slide swiper-slide--img" src="./images/slider img7.svg" alt="" srcset=""> -->
+                <img class="swiper-slide swiper-slide--img" src="./images/slider img3.svg" alt="" srcset="">
+                <img class="swiper-slide swiper-slide--img" src="./images/slider img6.svg" alt="" srcset="">
+                <img class="swiper-slide swiper-slide--img" src="./images/slider img5.svg" alt="" srcset="">  
+                <img class="swiper-slide swiper-slide--img" src="./images/slider img6.svg" alt="" srcset="">
             </div>
           </div>
     </section>
@@ -365,21 +427,21 @@
                     <form action="">
                         <div class="contacts__form-box">
                             <h2 class="contacts__form-title">Имя</h2>
-                            <input placeholder="Введите имя" type="text" class="contacts__form-input">
+                            <input placeholder="Введите имя" type="text" maxlength="30" class="contacts__form-input " required>
                         </div>
                         <div class="contacts__form-items">
                             <div class="contacts__form-box">
                                 <h2 class="contacts__form-title">Телефон</h2>
-                                <input placeholder="+7" type="text" class="contacts__form-input">
+                                <input placeholder="+7" type="text" class="contacts__form-input contacts__form-input--tel" required>
                             </div>
                             <div class="contacts__form-box">
                                 <h2 class="contacts__form-title">Email</h2>
-                                <input placeholder="Введите email" class="contacts__form-input"></input>
+                                <input type="email" placeholder="Введите email" maxlength="30" class="contacts__form-input" required></input>
                             </div>
                         </div>
                         <div class="contacts__form-box box__marin-top">
                             <h2 class="contacts__form-title">Сообщение</h2>
-                            <textarea placeholder="Введите текст сообщения" class="contacts__form-input contacts__form-textarea"></textarea>
+                            <textarea placeholder="Введите текст сообщения" maxlength="150" class="contacts__form-input contacts__form-textarea"></textarea>
                         </div>
                         <div class="contacts__form-suptext">Нажимая на кнопку “Отправить заявку”, Вы даете согласие на <a class="contacts__form-suptext--link" href="">обработку персональных данных</a> и соглашаетесь с <a class="contacts__form-suptext--link" href="">политикой конфиденциальности.</a></div>
                         <button class="contacts__form-btn section__btn">Оставить заявку</button>
@@ -496,7 +558,7 @@
                     </div>
                     <div class="col answer__items-surfiticat">
                         <h2 class="answer__item-text">Сертификаты и декларации соответствия:</h2>
-                        <div class="row answer__item-surfiticat">
+                        <a class="row answer__item-surfiticat" href="./Чарльз-Петцольд-К.О.Д..pdf" download>
                             <div class="col-auto ">
                                 <img src="./images/Vector2.svg" alt="">
                             </div>
@@ -506,9 +568,9 @@
                             <div class="col-auto">
                                 <img src="./images/Vector3.svg" alt="">
                             </div>
-                        </div>
-                        <div class="row answer__item-surfiticat">
-                            <div class="col-auto">
+                        </a>
+                        <a class="row answer__item-surfiticat" href="./Чарльз-Петцольд-К.О.Д..pdf" download>
+                            <div class="col-auto ">
                                 <img src="./images/Vector2.svg" alt="">
                             </div>
                             <div class="col">
@@ -517,9 +579,9 @@
                             <div class="col-auto">
                                 <img src="./images/Vector3.svg" alt="">
                             </div>
-                        </div>
-                        <div class="row answer__item-surfiticat">
-                            <div class="col-auto">
+                        </a>
+                        <a class="row answer__item-surfiticat" href="./Чарльз-Петцольд-К.О.Д..pdf" download>
+                            <div class="col-auto ">
                                 <img src="./images/Vector2.svg" alt="">
                             </div>
                             <div class="col">
@@ -528,9 +590,9 @@
                             <div class="col-auto">
                                 <img src="./images/Vector3.svg" alt="">
                             </div>
-                        </div>
-                        <div class="row answer__item-surfiticat">
-                            <div class="col-auto">
+                        </a>
+                        <a class="row answer__item-surfiticat" href="./Чарльз-Петцольд-К.О.Д..pdf" download>
+                            <div class="col-auto ">
                                 <img src="./images/Vector2.svg" alt="">
                             </div>
                             <div class="col">
@@ -539,9 +601,9 @@
                             <div class="col-auto">
                                 <img src="./images/Vector3.svg" alt="">
                             </div>
-                        </div>
-                        <div class="row answer__item-surfiticat">
-                            <div class="col-auto">
+                        </a>
+                        <a class="row answer__item-surfiticat" href="./Чарльз-Петцольд-К.О.Д..pdf" download>
+                            <div class="col-auto ">
                                 <img src="./images/Vector2.svg" alt="">
                             </div>
                             <div class="col">
@@ -550,9 +612,9 @@
                             <div class="col-auto">
                                 <img src="./images/Vector3.svg" alt="">
                             </div>
-                        </div>
-                        <div class="row answer__item-surfiticat">
-                            <div class="col-auto">
+                        </a>
+                        <a class="row answer__item-surfiticat" href="./Чарльз-Петцольд-К.О.Д..pdf" download>
+                            <div class="col-auto ">
                                 <img src="./images/Vector2.svg" alt="">
                             </div>
                             <div class="col">
@@ -561,7 +623,7 @@
                             <div class="col-auto">
                                 <img src="./images/Vector3.svg" alt="">
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -575,13 +637,13 @@
                     <div class="col-auto help__left">
                         <img class="help__left-img" src="./images/BackHelp.png" alt="" srcset="">
                     </div>
-                    <div class="col help__right">
+                    <form class="col help__right">
                         <h1 class="help__title">Помощь с выбором</h1>
                         <p class="help__text">Ответьте на несколько вопросов и мы подберем для вас косметику в 3-х ценовых диапазонах от бюджетного до премиального</p>
                         <div class="help__progress progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                             <div class="help__progress-bar progress-bar bg-success" style="width: 0%"></div>
                         </div>
-                        <form class="help__form">
+                        <div class="help__form">
                             <div class="help__form-box help__form-box--1">
                                 <h1 class="help__form-title">Где Вы реализуете продукцию?</h1>
                                 <div class="row help__form-item">
@@ -738,21 +800,25 @@
                                 <div class="row">
                                     <div class="col help__form-box-item-1">
                                         <h1 class="help__form-title">Имя</h1>
-                                        <input placeholder="Введите имя" class="help__form-input" type="text">
+                                        <input placeholder="Введите имя" maxlength="35" class="help__form-input" type="text" required>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col help__form-box-item">
                                         <h1 class="help__form-title">Телефон</h1>
-                                        <input placeholder="+7" class="help__form-input" type="text">
+                                        <input placeholder="+7" class="help__form-input help__form-input--tel" type="text" required>
                                     </div>
                                     <div class="col help__form-box-item">
                                         <h1 class="help__form-title">Email</h1>
-                                        <input placeholder="Введите email" class="help__form-input" type="text">
+                                        <input placeholder="Введите email" maxlength="35" class="help__form-input" type="email" required>
                                     </div>
                                 </div>
                             </div>
-                        </form>
+                            <div class="help__form-box help__form-box--end item--hidden">
+                                <h1 class="help__form-title">Данные успешнно отправлены!</h1>
+                                <img src="./images/icons8-complete.svg" class="help__form-box--img" alt="" srcset="">
+                            </div>
+                        </div>
                         <div class="row row-cols-2 help__form-btns">
                             <div class="col-auto col-btn">
                                 <button type="button" class="help__form-btn help__form-btn--prev">Назад</button>
@@ -762,7 +828,7 @@
                                 <button type="submit" class="help__form-btn help__form-btn--submit item--hidden">Отправить</button>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -815,17 +881,48 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.js" integrity="sha512-BjE6jVr0CP6MHwhQDktnlrSZsenyvbFgyBatZDZIvaNH9hiCVeyeh4vm0CR2JKLvNYGBPKpQQhAhr6hj6Fd4Ug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="./node_modules/cleave.js/dist/cleave.min.js"></script>
+    <script src="./node_modules/cleave.js/dist/addons/cleave-phone.ru.js"></script>
+    <script>
+        var cleave = new Cleave('.contacts__form-input--tel', {
+            phone:true,
+            phoneRegionCode: 'RU'
+        });
+
+        var cleave = new Cleave('.help__form-input--tel', {
+            phone:true,
+            phoneRegionCode: 'RU'
+        });
+
+        var cleave = new Cleave('.offer__input-tel', {
+            phone:true,
+            phoneRegionCode: 'RU'
+        });
+    </script>
     <script>
         var swiper = new Swiper(".mySwiper-1", {
+            // slidesPerView: 'auto',
+            // loop: true,
+            // spaceBetween: 52,
+            // autoplay: {
+            //     delay: 1000,
+            //     disableOnInteraction: true,
+            // },
+            // speed: 1000,
+            // lazy: true
+            
+            freeMode: true,
+            spaceBetween: 52,
+            grabCursor: true,
             slidesPerView: 'auto',
             loop: true,
-            spaceBetween: 52,
-            speed: 3500,
-            freeMode: false,
             autoplay: {
-                delay: 500,
-                disableOnInteraction: false,
-            }
+                delay: 0,
+                disableOnInteraction: false
+            },
+            speed: 1500,
+            longSwipes: false,
         });
         window.addEventListener('resize', () => {
             const viewport_width = Math.max(document.documentElement.clientWidth,window.innerWidth || 0)

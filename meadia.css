@@ -294,7 +294,7 @@
     .offer__btn-сatalog, .offer__btn-application {
         font-size: 16px;
         padding: 16px;
-        white-space: nowrap;
+        /* white-space: nowrap; */
     }
 
     .offer__btns {
@@ -304,6 +304,7 @@
         transform: translateX(-50%);
         width: 80%;
         margin-top: 0;
+        z-index: 99999;
     }
 
     .contacts__form {
@@ -454,12 +455,13 @@
 
     .catolog__items {
         grid-template-columns: repeat(1,1fr);
+        grid-auto-rows: 250px;
     }
 
     .offer__btns {
         display: grid;
         gap: 24px;
-        bottom: 103px;
+        bottom: 50px;
     }
 
     .offer__btn-application, .offer__btn-сatalog {
@@ -489,23 +491,32 @@
         width: 100vw;
         background-color: #FFFFFF;
         top: -100%;
-        transition: 0.5s;
+        transition: 1s;
+        padding: 12px;
     }
-    
-    /* .dropdown-menu::before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        top: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-    } */
+
     
     .body {
-        padding-top: 110px;
+        padding-top: 86px;
     }
 
     .header--visible {
         top: 0;
     }
+
+    .offer__inner {
+        padding: 50px 0;
+        height: 430px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    .modal__offer-content {
+        width: 100vw;
+        top: 20%;
+    }
+
+   
 }
