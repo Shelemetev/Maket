@@ -1058,6 +1058,7 @@ h1,h2,p {
 
 .help__right {
     position: relative;
+    z-index: 12;
 }
 
 .help__form-input {
