@@ -492,9 +492,12 @@
         background-color: #FFFFFF;
         top: -100%;
         transition: 1s;
-        padding: 12px;
+        padding: 12px 0;
     }
 
+    .footer {
+        padding: 12px 0;
+    }
     
     .body {
         padding-top: 86px;
