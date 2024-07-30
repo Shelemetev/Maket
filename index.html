@@ -72,37 +72,7 @@
                 <p class="offer__text">Гарантируем бесперебойные поставки при любой международной обстановке</p>
                 <div class="offer__btns">
                     <button type="button" class="offer__btn-application" data-toggle="modal" data-target="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal">Оставить заявку</button>
-                    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div data-toggle="modal" data-target="#testModal" class="modal-content modal__offer-content">
-                                <button type="button" class="btn-close offer__modal-btn" data-bs-dismiss="modal" aria-label="Close"></button>
-                                <div class="offer__form">
-                                    <form action="">
-                                        <div class="contacts__form-box">
-                                            <h2 class="contacts__form-title">Имя</h2>
-                                            <input placeholder="Введите имя" type="text" maxlength="30" name="name" class="contacts__form-input" required>
-                                        </div>
-                                        <div class="contacts__form-items">
-                                            <div class="contacts__form-box">
-                                                <h2 class="contacts__form-title">Телефон</h2>
-                                                <input placeholder="+7" type="text" name="tel" class="contacts__form-input offer__input-tel" required>
-                                            </div>
-                                            <div class="contacts__form-box">
-                                                <h2 class="contacts__form-title">Email</h2>
-                                                <input type="email" placeholder="Введите email" maxlength="30" name="email" class="contacts__form-input" required></input>
-                                            </div>
-                                        </div>
-                                        <div class="contacts__form-box box__marin-top">
-                                            <h2 class="contacts__form-title">Сообщение</h2>
-                                            <textarea placeholder="Введите текст сообщения" maxlength="150" class="contacts__form-input contacts__form-textarea"></textarea>
-                                        </div>
-                                        <div class="contacts__form-suptext">Нажимая на кнопку “Отправить заявку”, Вы даете согласие на <a class="contacts__form-suptext--link" href="">обработку персональных данных</a> и соглашаетесь с <a class="contacts__form-suptext--link" href="">политикой конфиденциальности.</a></div>
-                                        <button class="contacts__form-btn section__btn">Оставить заявку</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                      </div>
+                    
                     <button class="offer__btn-сatalog" data-bs-toggle="modal" data-bs-target="#exampleModal2">Получить каталог</button>
                     <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
@@ -125,6 +95,38 @@
             </div>
         </div>
     </section>
+
+    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div data-toggle="modal" data-target="#testModal" class="modal-content modal__offer-content">
+                <button type="button" class="btn-close offer__modal-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="offer__form">
+                    <form action="">
+                        <div class="contacts__form-box">
+                            <h2 class="contacts__form-title">Имя</h2>
+                            <input placeholder="Введите имя" type="text" maxlength="30" name="name" class="contacts__form-input" required>
+                        </div>
+                        <div class="contacts__form-items">
+                            <div class="contacts__form-box">
+                                <h2 class="contacts__form-title">Телефон</h2>
+                                <input placeholder="+7" type="text" name="tel" class="contacts__form-input offer__input-tel" required>
+                            </div>
+                            <div class="contacts__form-box">
+                                <h2 class="contacts__form-title">Email</h2>
+                                <input type="email" placeholder="Введите email" maxlength="30" name="email" class="contacts__form-input" required></input>
+                            </div>
+                        </div>
+                        <div class="contacts__form-box box__marin-top">
+                            <h2 class="contacts__form-title">Сообщение</h2>
+                            <textarea placeholder="Введите текст сообщения" maxlength="150" class="contacts__form-input contacts__form-textarea"></textarea>
+                        </div>
+                        <div class="contacts__form-suptext">Нажимая на кнопку “Отправить заявку”, Вы даете согласие на <a class="contacts__form-suptext--link" href="">обработку персональных данных</a> и соглашаетесь с <a class="contacts__form-suptext--link" href="">политикой конфиденциальности.</a></div>
+                        <button class="contacts__form-btn section__btn">Оставить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section class="company">
         <div class="swiper mySwiper-1">

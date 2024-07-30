@@ -1148,8 +1148,12 @@ h1,h2,p {
 }
 
 .modal-dialog {
-    transition: opacity .3s ease, transform .3s ease
+    transition: opacity .3s ease, transform .3s ease !important
 }
 
-
+.offer__form {
+    position: fixed;
+    background-color: #FFFFFF;
+    /* z-index: 99999999 !important; */
+}
 
