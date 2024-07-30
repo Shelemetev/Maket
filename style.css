@@ -5,7 +5,7 @@
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-@import url(./fonts);
+
 
 /* .col, .col-auto {
     padding: 0;
@@ -39,7 +39,7 @@ h1,h2,p {
     padding: 24px 0;
     position: fixed;
     width: 100%;
-    z-index: 10;
+    z-index: 20;
     background-color: #FFFFFF;
     top: -100%;
     transition: 1s;
@@ -1085,8 +1085,9 @@ h1,h2,p {
 .modal__offer-content {
     position:fixed ;
     max-width: 600px;
-    left: 0;
-    top:100px;
+    left: 50%;
+    transform: translateX(-50%);
+    top:20px !important;
 }
 
 .offer__form {
@@ -1096,7 +1097,7 @@ h1,h2,p {
 }
 
 .accordion-item:last-of-type>.accordion-collapse {
-    transition: 1s;
+    transition: 0.4s;
 }
 
 .answer__accordion-item--btn {
@@ -1135,6 +1136,9 @@ h1,h2,p {
 
 .swiper-slide--img {
     filter: invert(50%);
+    transition: 0.4s;
+    width: 150px;
+    height: 30px;
 }
 
 .swiper-slide--img:hover {
@@ -1155,6 +1159,19 @@ h1,h2,p {
 .offer__form {
     position: fixed;
     background-color: #FFFFFF;
-    top: 20px !important    ;
 }
 
+.help__form-input {
+    border: none;
+    outline: none;
+}
+
+.help__form {
+    padding-bottom: 25px;
+}
+
+.error-text {
+    color: red;
+    position: absolute;
+    bottom: 0px;
+}

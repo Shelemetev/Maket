@@ -1,19 +1,24 @@
 
 
 
-window.addEventListener('scroll', (event) => {
-  let y = document.querySelector('.offer').getBoundingClientRect().top
-  document.querySelector('.header').classList.toggle('header--visible', y + document.querySelector('.offer').clientHeight <= window.innerHeight && y >= -300);
-
-})
-
-window.addEventListener('DOMContentLoaded', () => {
-  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  console.log(scrollTop);
-  if (scrollTop > 400) {
-    document.querySelector('.header').classList.remove('header--visible') 
+window.addEventListener('wheel', (event) => {
+  // let y = document.querySelector('.offer').getBoundingClientRect().top
+  // document.querySelector('.header').classList.toggle('header--visible', y + document.querySelector('.offer').clientHeight <= window.innerHeight && y >= -300);
+  console.log(event.deltaY);
+  if (event.deltaY > 0) {
+    document.querySelector('.header').classList.remove('header--visible')
+  } else {
+    document.querySelector('.header').classList.add('header--visible')
   }
 })
+
+// window.addEventListener('DOMContentLoaded', () => {
+//   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+//   console.log(scrollTop);
+//   if (scrollTop > 400) {
+//     document.querySelector('.header').classList.remove('header--visible') 
+//   }
+// })
 
 let getItems = (name) => {
   const checkboxes = document.querySelectorAll(`input[name="${name}"]`)
@@ -61,15 +66,20 @@ document.querySelector('.help__form-btn--next').addEventListener('click', () => 
         globalStep = 3
         if (!!values.time) {
           globalStep = 4
-        }
-      }
-    }
+      } 
+    } 
+  } 
   }
 
   if (localStep > globalStep) {
     localStep = globalStep
+    document.querySelector('.error-text').classList.remove('item--hidden')
+  } else {
+    document.querySelector('.error-text').classList.add('item--hidden')
   }
-  
+    
+
+
   if (localStep === 1) {
     document.querySelector('.help__form-box--1').classList.add('item--hidden')
     document.querySelector('.help__form-box--2').classList.remove('item--hidden')
@@ -102,6 +112,8 @@ document.querySelector('.help__form-btn--next').addEventListener('click', () => 
     setProgress(100)
   } 
   
+
+
 })
 
 document.querySelector('.help__form-btn--prev').addEventListener('click', () => {
@@ -161,9 +173,12 @@ document.querySelector('.help__form-btn--prev').addEventListener('click', () => 
     localStep = 0
   }
 
+  document.querySelector('.error-text').classList.add('item--hidden')
+
 })
 
 document.querySelector('.help__right').addEventListener('submit', (event) => {
+  document.querySelector('.error-text').classList.add('.item--hidden')
   event.preventDefault()
   document.querySelector('.help__form-box--5').classList.add('item--hidden')
   document.querySelector('.help__form-box--end').classList.remove('item--hidden')
