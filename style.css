@@ -1175,3 +1175,7 @@ h1,h2,p {
     position: absolute;
     bottom: 0px;
 }
+
+label {
+    cursor: pointer;
+}
