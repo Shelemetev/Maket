@@ -1146,3 +1146,7 @@ h1,h2,p {
     top: 10px;
     position: absolute;
 }
+
+.modal-dialog {
+    transition: opacity .3s ease, transform .3s ease
+}
