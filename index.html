@@ -115,17 +115,31 @@
 
     <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h2 class="modal-title fs-5" id="exampleModalLabel">Modal title</h2>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+          <div class="modal-content modal__offer-content">
+            <div class="offer__form">
+                <button type="button" class="btn-close offer__modal-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+                <form action="">
+                    <div class="contacts__form-box">
+                        <h2 class="contacts__form-title">Имя</h2>
+                        <input placeholder="Введите имя" type="text" maxlength="30" name="name" class="contacts__form-input" required>
+                    </div>
+                    <div class="contacts__form-items">
+                        <div class="contacts__form-box">
+                            <h2 class="contacts__form-title">Телефон</h2>
+                            <input placeholder="+7" type="text" name="tel" class="contacts__form-input offer__input-tel" required>
+                        </div>
+                        <div class="contacts__form-box">
+                            <h2 class="contacts__form-title">Email</h2>
+                            <input type="email" placeholder="Введите email" maxlength="30" name="email" class="contacts__form-input" required></input>
+                        </div>
+                    </div>
+                    <div class="contacts__form-box box__marin-top">
+                        <h2 class="contacts__form-title">Сообщение</h2>
+                        <textarea placeholder="Введите текст сообщения" maxlength="150" class="contacts__form-input contacts__form-textarea"></textarea>
+                    </div>
+                    <div class="contacts__form-suptext">Нажимая на кнопку “Отправить заявку”, Вы даете согласие на <a class="contacts__form-suptext--link" href="">обработку персональных данных</a> и соглашаетесь с <a class="contacts__form-suptext--link" href="">политикой конфиденциальности.</a></div>
+                    <button class="contacts__form-btn section__btn">Оставить заявку</button>
+                </form>
             </div>
           </div>
         </div>
