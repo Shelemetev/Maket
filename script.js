@@ -1,9 +1,4 @@
-
-
-
 window.addEventListener('wheel', (event) => {
-  // let y = document.querySelector('.offer').getBoundingClientRect().top
-  // document.querySelector('.header').classList.toggle('header--visible', y + document.querySelector('.offer').clientHeight <= window.innerHeight && y >= -300);
   console.log(event.deltaY);
   if (event.deltaY > 0) {
     document.querySelector('.header').classList.remove('header--visible')
@@ -11,14 +6,7 @@ window.addEventListener('wheel', (event) => {
     document.querySelector('.header').classList.add('header--visible')
   }
 })
-
-// window.addEventListener('DOMContentLoaded', () => {
-//   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-//   console.log(scrollTop);
-//   if (scrollTop > 400) {
-//     document.querySelector('.header').classList.remove('header--visible') 
-//   }
-// })
+// Работа header
 
 let getItems = (name) => {
   const checkboxes = document.querySelectorAll(`input[name="${name}"]`)
@@ -33,10 +21,12 @@ let getItems = (name) => {
 
   return checkboxesChecked
 }
+//Функция для получения данных checkbox
 
 let setProgress = (width) => {
   document.querySelector('.help__progress-bar').style.width = `${width}%`
 }
+//Функция для изменения прогресса
 
 let globalStep = 0
 let localStep = 0
@@ -182,4 +172,46 @@ document.querySelector('.help__right').addEventListener('submit', (event) => {
   event.preventDefault()
   document.querySelector('.help__form-box--5').classList.add('item--hidden')
   document.querySelector('.help__form-box--end').classList.remove('item--hidden')
+})
+// Для работы формы с прогрессом
+
+document.querySelectorAll('.form').forEach(item => {
+  item.addEventListener('submit', (event) => {
+    event.preventDefault()
+
+    const fields = document.querySelectorAll('.contacts__form-input')
+    const values = {}
+
+    let string = ''
+
+    fields.forEach(field => {
+      const {name,value} = field
+      if (value != '' && value != '+7') {
+        values[name] = value
+        string += `${name}=${value}&`
+      }
+      
+    })
+
+    console.log(JSON.stringify(values) );
+
+    let xhttp = new XMLHttpRequest()
+    xhttp.open("POST", '/', true);
+    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    // xhttp.send(JSON.stringify(values));
+    xhttp.send(values)
+    
+    xhttp.onreadystatechange = function() {
+      console.log(this.response);
+    }
+
+    fields.forEach(item => item.value = "")
+
+    document.querySelector('.toast').classList.add("show")
+
+    setTimeout(() => {
+      document.querySelector('.toast').classList.remove("show")
+    }, 5000)
+
+  })
 })

@@ -81,12 +81,12 @@
         </div>
     </section>
 
-    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div data-toggle="modal" data-target="#testModal" class="modal-content modal__offer-content">
                 <div class="offer__form">
                     <button type="button" class="btn-close offer__modal-btn" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <form action="">
+                    <form class="form" action="">
                         <div class="contacts__form-box">
                             <h2 class="contacts__form-title">Имя</h2>
                             <input placeholder="Введите имя" type="text" maxlength="30" name="name" class="contacts__form-input" required>
@@ -113,7 +113,7 @@
         </div>
     </div>
 
-    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal " id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content modal__offer-content">
             <div class="offer__form">
@@ -174,21 +174,7 @@
                 <img class="swiper-slide swiper-slide--img" src="./images/slider img5.svg" alt="" srcset="">  
                 <img class="swiper-slide swiper-slide--img" src="./images/slider img6.svg" alt="" srcset="">
                 <img class="swiper-slide swiper-slide--img" src="./images/slider img5.svg" alt="" srcset="">  
-                <img class="swiper-slide swiper-slide--img" src="./images/slider img6.svg" alt="" srcset="">
-                <img class="swiper-slide swiper-slide--img" src="./images/slider img.svg" alt="" srcset="">
-                <img class="swiper-slide swiper-slide--img" src="./images/slider img2.svg" alt="" srcset="">
-                <img class="swiper-slide swiper-slide--img" src="./images/slider img3.svg" alt="" srcset="">
-                <img class="swiper-slide swiper-slide--img" src="./images/slider img4.svg" alt="" srcset="">
-                <img class="swiper-slide swiper-slide--img" src="./images/slider img2.svg" alt="" srcset="">
-                <img class="swiper-slide swiper-slide--img" src="./images/slider img3.svg" alt="" srcset="">
-                <img class="swiper-slide swiper-slide--img" src="./images/slider img4.svg" alt="" srcset="">
-                <img class="swiper-slide swiper-slide--img" src="./images/slider img5.svg" alt="" srcset="">
-                <img class="swiper-slide swiper-slide--img" src="./images/slider img6.svg" alt="" srcset="">
-                <!-- <img class="swiper-slide swiper-slide--img" src="./images/slider img7.svg" alt="" srcset=""> -->
-                <img class="swiper-slide swiper-slide--img" src="./images/slider img3.svg" alt="" srcset="">
-                <img class="swiper-slide swiper-slide--img" src="./images/slider img6.svg" alt="" srcset="">
-                <img class="swiper-slide swiper-slide--img" src="./images/slider img5.svg" alt="" srcset="">  
-                <img class="swiper-slide swiper-slide--img" src="./images/slider img6.svg" alt="" srcset="">
+               
             </div>
           </div>
     </section>
@@ -459,32 +445,44 @@
                     <a class="contacts__info-suptext" href="tel:+79644541700">+7 (964) 454-17-00</a>
                 </div>
                 <div class="contacts__form">
-                    <form action="">
+                    <form class="form" action="">
                         <div class="contacts__form-box">
                             <h2 class="contacts__form-title">Имя</h2>
-                            <input placeholder="Введите имя" type="text" maxlength="30" class="contacts__form-input " required>
+                            <input placeholder="Введите имя" type="text" name="name" maxlength="30" class="contacts__form-input contacts__form-input-cont" required>
                         </div>
                         <div class="contacts__form-items">
                             <div class="contacts__form-box">
                                 <h2 class="contacts__form-title">Телефон</h2>
-                                <input placeholder="+7" type="text" class="contacts__form-input contacts__form-input--tel" required>
+                                <input placeholder="+7" type="text" name="tel" class="contacts__form-input contacts__form-input--tel contacts__form-input-cont" required>
                             </div>
                             <div class="contacts__form-box">
                                 <h2 class="contacts__form-title">Email</h2>
-                                <input type="email" placeholder="Введите email" maxlength="30" class="contacts__form-input" required></input>
+                                <input type="email" placeholder="Введите email" name="email" maxlength="30" class="contacts__form-input contacts__form-input-cont" required></input>
                             </div>
                         </div>
                         <div class="contacts__form-box box__marin-top">
                             <h2 class="contacts__form-title">Сообщение</h2>
-                            <textarea placeholder="Введите текст сообщения" maxlength="150" class="contacts__form-input contacts__form-textarea"></textarea>
+                            <textarea placeholder="Введите текст сообщения" name="massage" maxlength="150" class="contacts__form-input contacts__form-textarea contacts__form-input-cont"></textarea>
                         </div>
                         <div class="contacts__form-suptext">Нажимая на кнопку “Отправить заявку”, Вы даете согласие на <a class="contacts__form-suptext--link" href="">обработку персональных данных</a> и соглашаетесь с <a class="contacts__form-suptext--link" href="">политикой конфиденциальности.</a></div>
-                        <button class="contacts__form-btn section__btn">Оставить заявку</button>
+                        <button class="contacts__form-btn section__btn" id="liveToastBtn">Оставить заявку</button>
+                        
                     </form>
                 </div>
             </div>
         </div>
     </section>
+
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <div class="me-2 toast-img"></div>
+          <strong class="me-auto">Bootstrap</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Выши данные успешно отправлены
+        </div>
+      </div>
 
     <section class="answer">
         <div class="container px-4">
@@ -948,8 +946,6 @@
             // speed: 1000,
             // lazy: true
             freeMode: true,
-            freeModeSticky: true,
-            freeModeMomentumBounce: false,
             spaceBetween: 52,
             slidesPerView: 'auto',
             loop: true,

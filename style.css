@@ -1086,14 +1086,19 @@ h1,h2,p {
     position:fixed ;
     max-width: 600px;
     left: 50%;
-    transform: translateX(-50%);
-    top:20px !important;
+    top: 50% ;
+    transform: translate(-50%,-50%);
+    /* top:20px !important; */
 }
 
 .offer__form {
     padding: 24px;
     border-radius: 16px;
     /* margin-top: 20px; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
 }
 
 .accordion-item:last-of-type>.accordion-collapse {
@@ -1159,6 +1164,7 @@ h1,h2,p {
 .offer__form {
     position: fixed;
     background-color: #FFFFFF;
+    width: 100% !important;
 }
 
 .help__form-input {
@@ -1179,3 +1185,26 @@ h1,h2,p {
 label {
     cursor: pointer;
 }
+
+.footer__text {
+    cursor: pointer;
+}
+
+.toast {
+    position: fixed;
+    z-index: 70;
+    right: 10px;
+    bottom: 10px;
+}
+
+.toast-img {
+    background-color: #14A751;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    position: relative;
+    background-image: url(./images/Gal.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
